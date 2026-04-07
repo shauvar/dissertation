@@ -1,0 +1,276 @@
+
+# API Keys and Credentials
+*.env
+.env.*
+config/secrets.yaml
+config/api_keys.json
+credentials.json
+api_key.txt
+
+# Raw data (privacy/licensing)
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.xlsx
+data/raw/youtube/
+data/raw/instagram/
+
+# Personal information
+*_personal.csv
+*_contact_info.*
+*_emails.*
+
+# ==================== PYTHON ====================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# ==================== DATA SCIENCE ====================
+
+# Large model files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+models/saved/*.pkl
+models/saved/*.h5
+
+# Large datasets (keep processed features)
+data/raw/
+data/interim/large_files/
+*.parquet
+
+# BUT allow processed features
+!data/processed/youtube_features.csv
+!data/processed/instagram_features.csv
+
+# Jupyter notebook outputs (optional - keep checkpoints clean)
+*.nb.html
+
+# ==================== R (if you use R) ====================
+.Rhistory
+.RData
+.Rproj.user
+
+# ==================== LATEX ====================
+
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# LaTeX intermediate files
+*.dvi
+*.xdv
+*-converted-to.*
+
+# Bibliography auxiliary files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Build tools
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# LaTeX temporary directories
+latex.out/
+
+# BUT keep the final PDF
+!dissertation/dissertation.pdf
+
+# ==================== OPERATING SYSTEM ====================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ==================== TEMPORARY FILES ====================
+
+# General temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Log files
+*.log
+logs/
+*.out
+
+# ==================== RESULTS (Selective) ====================
+
+# Large result files (but keep key outputs)
+results/experiments/*.csv
+results/model_outputs/all_predictions_*.csv
+
+# BUT keep summary tables
+!results/tables/summary_*.csv
+!results/tables/latex_*.tex
+
+# Keep all figures (they should be small enough)
+!results/figures/*.png
+!results/figures/*.pdf
+
+# ==================== MISC ====================
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Scratch/debug files
+scratch/
+debug/
+test_output/
+experiments_old/
+
+# ==================== PROJECT SPECIFIC ====================
+
+# Don't commit large raw video files if you download them
+data/videos/
+*.mp4
+*.avi
+
+# Don't commit intermediate cache
+.cache/
+cache/
+
+# Keep these important files
+!.gitignore
+!README.md
+!LICENSE
+!requirements.txt
+!environment.yml
+
+# Add this to your .gitignore
+echo "*.pkl" >> .gitignore
+echo "*.pptx" >> .gitignore
+echo "csv/*.csv" >> .gitignore
+echo "pics/*.png" >> .gitignore
+echo "key_results/*.png" >> .gitignore
+echo "key_results/*.csv" >> .gitignore
+echo "instagram/*.png" >> .gitignore
