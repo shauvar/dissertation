@@ -164,17 +164,15 @@ If you use this code or reference this work, please cite:
 
 **To replicate:**
 1. Obtain YouTube Data API v3 key from Google Cloud Console
-2. Download Instagram dataset from [Kaggle](https://www.kaggle.com/datasets/...)
+2. Download Instagram dataset from [Kaggle](https://www.kaggle.com/datasets/surajjha101/top-instagram-influencers-data-cleaned?resource=download)
 3. Place in `data/raw/` directory
 4. Run data collection scripts
 
 Processed features (with anonymized IDs) are available in `data/processed/`.
 
-## ⚖️ License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Supervisor:** Dr. Van-Dinh Nguyen for guidance and feedback
 - **Trinity College Dublin** for research resources
@@ -194,4 +192,3 @@ GitHub: [shauvar](https://github.com/shauvar)
 ---
 
 **Last Updated:** April 2026  
-**Status:** ✅ Complete - Dissertation Submitted
